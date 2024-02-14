@@ -1,0 +1,13 @@
+// Write your code here
+        if (s.length() <= 1){
+            return 0;
+        }
+        
+        if (s.charAt(0) == s.charAt(1)){
+            return 1 + alternatingCharacters(s.substring(1));
+        }else{
+            return alternatingCharacters(s.substring(1));
+        }
+    }
+
+}
