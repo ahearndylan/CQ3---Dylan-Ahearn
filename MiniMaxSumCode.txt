@@ -1,0 +1,24 @@
+// Write your code here
+        long min = Long.MAX_VALUE;
+        long max = Long.MIN_VALUE;
+        long totalSum = 0; 
+        
+        for (int num : arr){
+            if(num < min){
+                min = num;
+            }
+            if(num > max){
+                max = num;
+            }
+            totalSum += num;
+        }
+        
+        long minSum = totalSum - max;
+        long maxSum = totalSum - min; 
+        
+        System.out.println(minSum + " " + maxSum);
+        
+    }
+
+}
+       
